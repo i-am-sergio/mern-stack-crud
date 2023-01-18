@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server --ignore client",
-    "start": "npm install --prefix client && npm run build --prefix client && rm -rf client/node_modules && node server"
+    "build": "npm install --prefix client && npm run build --prefix client",
+    "start": "node server"
   },
   "keywords": [],
   "author": "",
