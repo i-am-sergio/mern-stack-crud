@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import { PostProvider } from "./context/PostContext";
 import { Toaster } from "react-hot-toast";
 
+export const URL = process.env.REACT_APP_SERVER_URL || "http://localhost:4000";
+
 function App() {
   return (
     <div className="bg-neutral-900 min-h-screen flex items-center">
